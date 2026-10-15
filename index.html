@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#faf6ef">
+    <title>Your stay at Maison Soleil</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar">
+      <img src="./assets/images/icon-menu.svg" alt="" width="22" height="22">
+      <span class="sr-only">Open navigation menu</span>
+    </button>
+
+    <div class="page-shell">
+      <aside class="sidebar" id="sidebar" aria-label="Guest navigation">
+        <div class="sidebar-top">
+          <a class="brand" href="#top" aria-label="Maison Soleil home">
+            <img src="./assets/images/illustration-sun.svg" alt="" width="32" height="32">
+            <span><span>Maison</span><strong>Soleil</strong></span>
+          </a>
+          <button class="menu-close" type="button" aria-label="Close navigation menu">
+            <img src="./assets/images/icon-close.svg" alt="" width="20" height="20">
+          </button>
+        </div>
+
+        <nav class="navigation">
+          <a class="nav-link is-active" href="#top" aria-current="page">
+            <img src="./assets/images/icon-bed.svg" alt="" width="18" height="18">
+            <span>Your stay</span><span class="nav-count">1</span>
+          </a>
+          <a class="nav-link" href="#host-note">
+            <img src="./assets/images/icon-house.svg" alt="" width="18" height="18">
+            <span>The house</span>
+          </a>
+          <a class="nav-link" href="#arrival">
+            <img src="./assets/images/icon-pin.svg" alt="" width="18" height="18">
+            <span>Around town</span>
+          </a>
+          <a class="nav-link" href="#breakfast">
+            <img src="./assets/images/icon-breakfast-outline.svg" alt="" width="18" height="18">
+            <span>Breakfast</span>
+          </a>
+          <a class="nav-link" href="#host-note">
+            <img src="./assets/images/icon-mail.svg" alt="" width="18" height="18">
+            <span>Messages</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <section class="weather" aria-label="Local weather">
+            <img class="weather-sun" src="./assets/images/illustration-sun.svg" alt="" aria-hidden="true">
+            <p class="eyebrow">Today in Cassis</p>
+            <p class="temperature">27°</p>
+            <p class="weather-caption">Sunny · light breeze</p>
+          </section>
+          <footer class="sidebar-footer">
+            <p>Est. 1987</p>
+            <p>Maison Soleil · 12 Rue des Oliviers · Cassis</p>
+            <p>© 2026 Maison Soleil</p>
+          </footer>
+        </div>
+      </aside>
+
+      <main class="main-content" id="top">
+        <header class="page-header">
+          <div class="page-title">
+            <p class="eyebrow">Booking · Confirmed</p>
+            <h1>Bienvenue, <em>Lucia.</em></h1>
+          </div>
+          <div class="header-actions">
+            <button class="button button-outline print-button" type="button">Print receipt</button>
+            <button class="button button-dark calendar-button" type="button">Add to calendar</button>
+          </div>
+        </header>
+
+        <section class="booking-stack" aria-label="Booking confirmation">
+          <article class="receipt-card" aria-labelledby="receipt-title">
+            <div class="receipt-topline">
+              <p class="eyebrow">Receipt</p>
+              <p class="receipt-number">№ MS-2026<br>0421-AH</p>
+            </div>
+            <h2 id="receipt-title">Your stay</h2>
+            <div class="stay-dates">
+              <div>
+                <p class="eyebrow">Check in</p>
+                <time class="date-large" datetime="2026-04-25">25 Apr</time>
+                <p class="date-caption">Saturday · 15:00</p>
+              </div>
+              <div>
+                <p class="eyebrow">Check out</p>
+                <time class="date-large" datetime="2026-04-29">29 Apr</time>
+                <p class="date-caption">Wednesday · 11:00</p>
+              </div>
+            </div>
+            <dl class="receipt-lines">
+              <div><dt>Room · La Garrigue · 4 nights</dt><dd>€ 620.00</dd></div>
+              <div><dt>Breakfast · 2 guests</dt><dd>€ 96.00</dd></div>
+              <div><dt>Tourist tax</dt><dd>€ 14.40</dd></div>
+            </dl>
+            <div class="receipt-total">
+              <span class="eyebrow">Total paid</span>
+              <strong>€ 730.40</strong>
+            </div>
+            <div class="receipt-bottom">
+              <p class="eyebrow">Paid · Wise · GBP</p>
+              <img src="./assets/images/icon-barcode.svg" alt="Booking barcode" width="91" height="34">
+            </div>
+          </article>
+
+          <article class="host-card" id="host-note" aria-labelledby="host-title">
+            <div class="host-card-top">
+              <p class="eyebrow">Welcome card</p>
+              <img src="./assets/images/icon-sun.svg" alt="" width="46" height="46">
+            </div>
+            <div class="host-message">
+              <p class="host-intro">A note from your host,</p>
+              <h2 id="host-title">Margaux.</h2>
+              <p>We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.</p>
+            </div>
+            <div class="host-room">
+              <span class="eyebrow">Room</span>
+              <strong>La Garrigue</strong>
+            </div>
+          </article>
+          <p class="fan-hint" aria-hidden="true">✦ &nbsp; Hover to fan &nbsp; ✦</p>
+        </section>
+
+        <section class="guest-info" aria-label="Information for your stay">
+          <article class="info-card arrival-card" id="arrival">
+            <div class="info-heading">
+              <span class="info-icon"><img src="./assets/images/icon-key.svg" alt="" width="22" height="22"></span>
+              <p class="eyebrow">Arrival</p><span class="info-number">01</span>
+            </div>
+            <h2>Check-in from 15:00</h2>
+            <p class="info-subtitle">Sat, 25 April</p>
+            <p>Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.</p>
+          </article>
+
+          <article class="info-card wifi-card" id="wifi">
+            <div class="info-heading">
+              <span class="info-icon"><img src="./assets/images/icon-wifi.svg" alt="" width="22" height="22"></span>
+              <p class="eyebrow">Wifi</p><span class="info-number">02</span>
+            </div>
+            <h2>Le Soleil · Guest</h2>
+            <p class="info-subtitle">Password below</p>
+            <dl class="wifi-details">
+              <div><dt>Network</dt><dd>Le Soleil · Guest</dd></div>
+              <div>
+                <dt>Password</dt>
+                <dd><span class="wifi-password">soleil-2026</span><button class="copy-button" type="button" data-copy-password aria-label="Copy Wi-Fi password">Copy</button></dd>
+              </div>
+            </dl>
+            <p class="copy-status" aria-live="polite" aria-atomic="true"></p>
+          </article>
+
+          <article class="info-card breakfast-card" id="breakfast">
+            <div class="info-heading">
+              <span class="info-icon"><img src="./assets/images/icon-breakfast.svg" alt="" width="22" height="22"></span>
+              <p class="eyebrow">Breakfast</p><span class="info-number">03</span>
+            </div>
+            <h2>Served 8 – 10:30</h2>
+            <p class="info-subtitle">On the terrace</p>
+            <p>Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
+          </article>
+        </section>
+      </main>
+    </div>
+    <div class="menu-backdrop" hidden></div>
+    <p class="sr-only calendar-status" aria-live="polite"></p>
+  </body>
+</html>
